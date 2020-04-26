@@ -209,14 +209,11 @@ padding-top: 10px;
 
 .begin-heading h1{
     font-size: 40px;
-    transition: all .3s ease-in-out;
+    
+    color: #33404a;
 }
 
-.begin-heading h1:hover{
-    transform: scale(1.1);
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-}
+
 
 .steps-main-container{
     display: grid;
@@ -289,20 +286,15 @@ font-size: 16px;
  
     margin: 0 auto;
     text-align: center;
-    margin-bottom: -40px;
+    padding: 35px 0;
 }
 
-.about-us-heading > img{
-height: 300px;
-margin: 0 auto;
-}
 
 
 .about-us h1{
-    color: black;
+    color: #33404a;
     font-size: 40px;
     font-weight: bold;
-    padding-bottom: 25px;
    
 }
 
@@ -336,7 +328,7 @@ margin: 0 auto;
 }
 
 .text-about-bg{
-    background-color: rgba(123, 244, 159, 0.8);
+    background-color: rgba(3, 168, 53, 0.9);
     clip-path: polygon(57% 0, 90% 0, 85% 70%, 75% 100%, 60% 100%, 40% 60%);
     position: absolute;
     background-repeat: no-repeat;
@@ -356,6 +348,7 @@ margin: 0 auto;
 .text-about-1 > h1{
     padding-top: 20px;
     color: white;
+    padding-bottom: 25px
 }
 
 .text-about-1 > p{
@@ -366,12 +359,13 @@ margin: 0 auto;
 
 .text-about-1 > button{
     padding: 20px;
-    background-color:white;
-    color: rgba(123, 244, 159, 0.8);
-    font-weight: bold;
-    font-size: 16px;
+    background-color: white;
+    color: rgb(3, 168, 53);
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 17px;
     outline: none;
-    border: .5px solid rgba(123, 244, 159, 0.8);
+    border: .5px solid rgb(3, 168, 53);
     margin-top: 30px;
     border-radius: 15px;
     transition: all .3s ease-in-out;
@@ -383,7 +377,10 @@ margin: 0 auto;
     cursor: pointer;
 }
 
-
+.reviews{
+    background-color: white;
+    padding-bottom: 80px;
+}
 .reviews-header{
     text-align: center;
     padding: 0 10%;
@@ -394,12 +391,18 @@ margin: 0 auto;
 
 .reviews-header > h1{
   
-    padding-top: 40px;
-    padding-bottom: 30px;
-    font-size: 35px;
-    font-weight: 800;
-    display: inline;
     
+    padding-bottom: 15px;
+ 
+   
+    font-size: 40px;
+color: #33404a;
+    
+}
+
+.reviews-header > p{
+    font-size: 25px;
+    color: #33404a;
 }
 
 .reviews-header > img{
@@ -410,40 +413,39 @@ margin: 0 auto;
 }
 
 .reviews-bg-image{
-    background-image: linear-gradient(to right bottom, rgba(123,231,234,.7), rgba(213,231,236,.7)),url(../images/reviews3.jpg);
-    width: 100%;
-    height: 500px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-    background-position: top;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
 }
 
 .slider{
-    width: 30%;
+   
     height: 100%;
     margin: 0 auto;
-    background-color: rgb(29, 14, 112);
+    background-color: white;
 }
 
 .customer-reviews{
     padding: 30px 20px;
     text-align: center;
+    width: 90% !important;
+    background-color: rgb(29, 14, 112);
+    border-radius: 15px;
 }
 
 .customer-reviews > img{
-    height: 150px;
+    height: 70px;
+    width: 100px;
     border-radius: 50%;
     text-align: center;
-    
     margin: 0 auto;
 }
 
 .customer-reviews > h1{
-    color: white;
-   padding-top: 15px;
-   padding-bottom: 10px;
+    color: sandybrown;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .checked{
@@ -454,11 +456,11 @@ margin: 0 auto;
 .da{
     display: inline-block;
 font: normal normal normal 14px/1 FontAwesome;
-font-size: 20px;
+font-size: 17px;
 text-rendering: auto;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
-padding: 5px;
+padding: 2px;
 
 
 }
@@ -479,9 +481,7 @@ padding: 5px;
     text-align: center;
     background-color: white;
 }
-.heading-events > img{
-    height: 250px;
-}
+
 
 .events-bg-1{
     background-image: linear-gradient(to right bottom, rgba(36, 23, 92, 0.7), rgba(118, 54, 138, 0.7)),url(../images/events.jpg);
@@ -555,63 +555,52 @@ padding: 5px;
     padding: 10px 25px;
     width: 150px;
     margin-right: 20px;
-    
+    border-radius: 12px;
     color: white;
     background: none;
     border: 1px solid white;
     outline: none;
 }
+
+.btn-1:hover{
+    background-color: rgb(145, 85, 189);
+    border: 1px solid indigo;
+    cursor: pointer;
+}
+
+
 
 .btn-2{
     padding: 10px 25px;
     width: 150px;
-   
+    border-radius: 12px;
     color: white;
     background: none;
     border: 1px solid white;
     outline: none;
 }
 
+.btn-2:hover{
+    background-color: rgb(145, 85, 189);
+    border: 1px solid indigo;
+    cursor: pointer;
+}
+
 
 .events-bg-2{
-    background-color: #F5F5F5;
-   
-    padding: 5% 10%;
+    background-color: white;
+    padding: 4% 8% 5% 8%;
 }
 
-.events-head-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.events2-heading{
+    margin: 0 auto;
+    text-align: center;
 }
 
-.searchbox{
-    justify-self: end;
-    align-self: center;
-}
-
-
-.searchbox > input{
-    width: 250px;
-    height: 30px;
-    padding-left: 10px;
-    border-radius: 5px;
-    outline: none;
-}
-
-.text > h1{
-    font-size: 35px;
+.events2-heading > h1{
+    font-size: 40px;
     padding-bottom: 10px;
-}
-
-.date-tape{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    margin-top: 50px;
-    height: 40px;
-    align-items: center;
-    border: 1px solid black;
-    justify-items: center;
-    justify-content: center;
+    color: #33404a;
 }
 
 
@@ -621,20 +610,22 @@ padding: 5px;
     justify-content: space-between;
 }
 .card{
-    width: 30%;
-    background-color: white;
-    box-shadow: 5px 10px 18px #888888;
+    width: 85% !important;
+    background-color: #F5F5F5;
+    border-radius: 15px;
    
 }
 
 .bg-image-card{
     background-image: url(../images/okhla.jpg);
-    width: 100%;
+    /* width: 100%; */
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
     height: 200px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    display: inline-block;
+    /* display: inline-block; */
     background-position: top;
 }
 
@@ -643,13 +634,23 @@ padding: 5px;
     padding-top: 10px;
 }
 
+.card-place > h2{
+    color: chocolate;
+}
+
+.card-place > p{
+    color: green;
+}
+
+
+
 .card-details{
    
     margin: 0 auto;
     display: grid;
     grid-template-rows: repeat(2,1fr);
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 15px;
     
     justify-items: center;
     text-align: center;
@@ -658,14 +659,18 @@ padding: 5px;
 .date > p{
 font-family: cursive;
 font-size: 16px;
+color: darkblue;
 }
 
 .date{
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
+
+
 
 .distance > p{
     font-family: cursive;
+    color: darkblue;
     }
 
 .card-buttons{
@@ -673,10 +678,11 @@ font-size: 16px;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 0 10px;
 }
 
 .card-btn1{
-    width: 300px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -686,6 +692,13 @@ font-size: 16px;
     color: white;
     background-color: cadetblue;
     border: 1px solid cadetblue;
+    outline: none;
+}
+
+.card-btn1:hover{
+    cursor: pointer;
+    background-color: #33404a;
+    border: 1px solid #33404a;
 }
 
 .card-btn2{
@@ -757,28 +770,34 @@ text-align: center;
 
 .name-holder:focus, .name-holder:active{
     color: white;
+    border-bottom: 1px solid yellowgreen;
 }
 
 .text-holder{
     margin-top: 40px;
+    height: 30px;
     margin-bottom: 10px;
     font-size: 17px;
     font-family: cursive;
     padding-bottom: 4px;
     background: none;
+    position: relative;
     border: none;
     border-bottom: 1px solid white;
     outline: none;
     color: white;
+    resize: none;
+    
 }
 
 .text-holder::placeholder{
     color: white;
+   
 }
 
 .text-holder:focus, .text-holder:active{
     color: white;
-    
+    border-bottom: 1px solid yellowgreen;
 }
 
 .form-btn{
@@ -793,6 +812,14 @@ text-align: center;
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
+
+    transition: all .3s ease-in-out;
+}
+
+.form-btn:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .footer{
